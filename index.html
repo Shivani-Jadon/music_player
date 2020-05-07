@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style/music_player.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<header>
+		<!--navigation menu contains search, profile, favourite, notification and player-->
+		<nav>
+			<!--for large and medium screen-->
+			<div id="large-nav">
+				<!--for music player icon-->
+				<div class="logo">
+					<div class="logo-pic">
+						<img src="Images/logo2.jpeg">
+					</div>
+					<span>
+						NinjaStudio
+					</span>
+				</div>
+				<!--for favourite songs reference-->
+				<div class="fav">
+					<a href="#">Favorites</a>
+				</div>
+				<!--for search bar-->
+				<div class="search">
+					<div class="search-box">
+						<a href="#"><i class="fas fa-search"></i></a>
+						<textarea rows="1" placeholder="Search"></textarea>
+					</div>		
+				</div>
+				<!--for notification icon-->
+				<div class="notify">
+					<a href="#"> <i class="fas fa-bell"></i> </a>
+				</div>
+				<!--for user id-->
+				<div class="id">
+					<div class="user">
+						S
+					</div>
+				</div>
+			</div>
+
+			<!--for small screen-->
+			<div id="small-nav">
+				<!--for music player icon-->
+				<div class="logo">
+					<div class="logo-pic">
+						<img src="Images/logo2.jpeg">
+					</div>
+					<span>
+						Ninja <br/>
+						Studio
+					</span>
+				</div>
+				<!--for user id-->
+				<div class="id">
+					<div class="user">
+						S
+					</div>
+				</div>
+				<!--for navigation bar-->
+				<div class="bar">
+					<div id="bar-icon"><i class="fas fa-bars"></i><div>
+						<div id="nav-menu">
+							<ul>
+								<li><a href="#"> <i class="fas fa-bell"></i> </a></li>
+								<li><a href="#">Favorites</a></li>
+								<li>
+									<div class="search-box">
+										<textarea rows="1"></textarea>
+										<a href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+				</div>
+		
+			</div>
+		</nav>
+
+	</header>
+
+	<!--main section contains song sharts and queue-->
+	<main>
+		<!--Article section contains the menu sections for the player-->
+		<article>
+			<!--song charts-->
+			<section class="song-chart">
+				<div id="box">
+					<div class="music-chart one">
+						<a href="#"> <img src="Images/cover6.png"> </a>
+					</div>
+					<div class="music-chart two">
+						<a href="#"> <img src="Images/cover7.jpg"> </a>
+					</div>
+					<div class="music-chart three">
+						<a href="#"> <img src="Images/cover8.jpg"> </a>
+					</div>
+					<div class="music-chart four">
+						<a href="#"> <img src="Images/cover9.jpg"> </a>
+					</div>	
+				</div>
+				
+			</section>
+
+			<!--latest release-->
+			<section class="song-chart">
+				<div class="heading">
+					<h1>Latest Releases</h1>
+				</div>
+				<!-- adding section items-->
+				<ul id="latest-release">
+					<li>
+						<!--adding picture-->
+						<div class="latest-image">
+							<div id="effect">
+								<i class="fas fa-play"></i>
+							</div>
+						</div>
+						<!--for expandable menu-->
+						<div id="expand">
+							<div id="dot-icon">
+								<a href="#menu1" target="_parent"><i class="fas fa-ellipsis-h"></i></a>
+							</div>
+						
+							<div id="menu1">
+								<ul class="list">
+									<li><a href="#"><i class="far fa-window-close"></i></a></li>
+									<li><a href="#"> Download </a></li>
+									<li><a href="#"> Share </a></li>
+								</ul>
+							</div>
+						
+							<!--div for writing song info-->
+							<div id="content">
+								<div>
+									<h4>Orion</h4>
+									<span>views</span>
+								</div>
+								<div id="date">March 12,2020</div>
+							</div>	
+						</div>	
+					</li>
+
+					<li>
+						<!--adding picture-->
+						<div class="latest-image">
+							<div id="effect">
+								<i class="fas fa-play"></i>
+							</div>
+						</div>
+						<!--for expandable menu-->
+						<div id="expand">
+							<div id="dot-icon">
+								<a href="#menu2"><i class="fas fa-ellipsis-h"></i></a>
+							</div>
+						
+							<div id="menu2">
+								<ul class="list">
+									<li><a href="#"><i class="far fa-window-close"></i></a></li>
+									<li><a href="#"> Download </a></li>
+									<li><a href="#"> Share </a></li>
+								</ul>
+							</div>
+	
+							<!--div for writing song info-->
+							<div id="content">
+								<div>
+									<h4>Orion</h4>
+									<span>views</span>
+								</div>
+								<div id="date">March 12,2020</div>
+							</div>	
+						</div>	
+					</li>
+					<li>
+						<!--adding picture-->
+						<div class="latest-image">
+							<div id="effect">
+								<i class="fas fa-play"></i>
+							</div>
+						</div>
+						<!--for expandable menu-->
+						<div id="expand">
+							<div id="dot-icon">
+								<a href="#menu3"><i class="fas fa-ellipsis-h"></i></a>
+							</div>
+						
+							<div id="menu3">
+								<ul class="list">
+									<li style="text-align: right;"><a href="#"><i class="far fa-window-close"></i></a></li>
+									<li><a href="#"> Download </a></li>
+									<li><a href="#"> Share </a></li>
+								</ul>
+							</div>
+						
+							<!--div for writing song info-->
+							<div id="content">
+								<div>
+									<h4>Orion</h4>
+									<span>views</span>
+								</div>
+								<div id="date">March 12,2020</div>
+							</div>	
+						</div>	
+					</li>
+					<li>
+						<!--adding picture-->
+						<div class="latest-image">
+							<div id="effect">
+								<i class="fas fa-play"></i>
+							</div>
+						</div>
+						<!--for expandable menu-->
+						<div id="expand">
+							<div id="dot-icon">
+								<a href="#menu4"><i class="fas fa-ellipsis-h"></i></a>
+							</div>
+						
+							<div id="menu4">
+								<ul class="list">
+									<li><a href="#"><i class="far fa-window-close"></i></a></li>
+									<li><a href="#"> Download </a></li>
+									<li><a href="#"> Share </a></li>
+								</ul>
+							</div>
+							
+							<!--div for writing song info-->
+							<div id="content">
+								<div>
+									<h4>Orion</h4>
+									<span>views</span>
+								</div>
+								<div id="date">March 12,2020</div>
+							</div>	
+						</div>	
+					</li>
+				</ul>	
+			</section>
+
+			<!--popular artist-->
+			<section class="song-chart">
+				<div class="heading">
+					<h1>Popular Artists</h1>
+				</div>
+				<!--adding artists-->
+				<ul id="artists">
+					<!--adding 15 list items-->
+					<li>
+						<!--for image and hovering transition-->
+						<div id="artist-box">
+							<a href="artist_playlist.html"><img src="Images/singer1.jpg"></a>
+						</div>	
+						<div id="name">Name</div>
+					</li>
+
+					<li>
+						<!--for image and hovering transition-->
+						<div id="artist-box">
+							<a href="artist_playlist.html"><img src="Images/singer2.jpeg"></a>
+						</div>	
+						<div id="name">Name</div>
+					</li>
+
+					<li>
+						<!--for image and hovering transition-->
+						<div id="artist-box">
+							<a href="artist_playlist.html"><img src="Images/singer3.jpg"></a>
+						</div>	
+						<div id="name">Name</div>
+					</li>
+
+					<li>
+						<!--for image and hovering transition-->
+						<div id="artist-box">
+							<a href="artist_playlist.html"><img src="Images/singer1.jpg"></a>
+						</div>	
+						<div id="name">Name</div>
+					</li>
+
+					<li>
+						<!--for image and hovering transition-->
+						<div id="artist-box">
+							<a href="artist_playlist.html"><img src="Images/singer2.jpeg"></a>
+						</div>	
+						<div id="name">Name</div>
+					</li>
+
+					<li>
+						<!--for image and hovering transition-->
+						<div id="artist-box">
+							<a href="artist_playlist.html"><img src="Images/singer3.jpg"></a>
+						</div>	
+						<div id="name">Name</div>
+					</li>
+				</ul>				
+			</section>
+
+			<!--stations-->
+			<section class="song-chart">
+				<!--stations logo in 3-D structure-->
+				<div id="layer1">
+					<div id="layer2">
+						<div id="layer3">
+							<img src="Images/cover7.jpg">
+						</div>
+					</div>
+				</div>
+				<!--stations list-->
+				<ul id="stations">
+					<li><a href="song_chart.html">
+						<div> Love </div>
+					</a></li>
+					<li><a href="song_chart.html">
+						<div> Workout </div>
+					</a></li>
+					<li><a href="song_chart.html">
+						<div> Retro </div>
+					</a></li>
+					<li><a href="#">
+						<div> Chill </div>
+					</a></li>
+					<li><a href="song_chart.html">
+						<div> Classical </div>
+					</a></li>
+					<li><a href="song_chart.html">
+						<div> Devotional </div>
+					</a></li>
+
+				</ul>
+			</section>
+
+			<!--popular channels-->
+			<section class="song-chart">
+				<ul id="channels">
+					<li><a href="song_chart.html" style="background-image: url(cover15.jpg);">
+						<div> PARTY </div>
+					</a></li>
+					<li><a href="song_chart.html"  style="background-image: url(cover11.jpg);">
+						<div> ELECTRONIC </div>
+					</a></li>
+					<li><a href="song_chart.html"  style="background-image: url(cover14.jpg);">
+						<div> ROAD TRIP </div>
+					</a></li>
+				</ul>
+			</section>
+			
+			<!--Latest English-->
+			<section class="song-chart">
+				<div class="heading">
+					<h1>Latest English</h1>
+				</div>
+				<!--Song list with release date-->
+				<ul class="latest-english">
+					<li>
+						<div id="image"><a href="#"><img src="Images/cover3.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li>
+					<li>
+						<div id="image"><a href="#"><img src="Images/cover8.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li>
+					<li>
+						<div id="image"><a href="#"><img src="Images/cover3.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li>
+					<li>
+						<div id="image"><a href="#"><img src="Images/cover8.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li>
+					<li>
+						<div id="image"><a href="#"><img src="Images/cover3.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li>	
+					<li>
+						<div id="image"><a href="#"><img src="Images/cover3.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li>		
+				</ul>
+			</section>
+
+			<!--Latest Hindi-->
+			<section class="song-chart">
+				<div class="heading">
+					<h1>Latest Hindi</h1>
+				</div>
+				<!--Song list with release date-->
+				<ul class="latest-english">
+					<li>
+						<div id="image"><a href="#"><img src="Images/cover12.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li><li>
+						<div id="image"><a href="#"><img src="Images/cover13.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li><li>
+						<div id="image"><a href="#"><img src="Images/cover12.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li><li>
+						<div id="image"><a href="#"><img src="Images/cover13.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li><li>
+						<div id="image"><a href="#"><img src="Images/cover12.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li><li>
+						<div id="image"><a href="#"><img src="Images/cover13.jpg"></a></div>
+						<div id="content">
+							<h3>Song</h3>
+							<span>MAR 13,2020</span>
+						</div>
+					</li>	
+				</ul>
+			</section>
+
+			<section style="height:20vh; width: 100%;">
+				<div style="height:inherit; display: flex; justify-content: center; align-items: flex-end;">
+					<img src="Images/banner.jpg" style="height:70%; width: 70%; border: 4px black solid;">
+				</div>
+			</section>
+
+		</article>
+
+		<!--aside section containa the queue list
+		-->
+		<aside>
+			<!--queue list-->
+			<section>
+				<div id="aside-header">
+					<h1>
+						Queue
+					</h1>
+					<!--for buttons and dropdown menu-->
+					<div id="more">
+						<a href="#"><button>More</button></a>
+							<div id="more-menu">
+								<ul>
+									<li><a href="#"> Play </a></li>
+									<li><a href="#">Favorites</a></li>
+									<li><a href="#">Download</a></li>
+									<li><a href="#">Like</a></li>
+								</ul>
+							</div>
+					</div>
+				</div>
+
+				<ol id="list" type="1">
+					<!--adding 30 list items-->
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover5.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+					<li>
+						<div id="item">
+							<div id="image"><img src="Images/cover1.jpg"></div>
+							<!--for song and album name-->
+							<div id="song-info">
+								<div id="song">Song</div>
+								<div id="album">album</div>
+							</div>
+							<div id="icon"><a href="#"><i class="far fa-heart"></i></a></div>
+						</div>	
+					</li>
+				</ol>
+			</section>
+		</aside>
+	</main>
+
+
+
+	<!--summary section contains pause/play option,
+	 song being played etc options and it is fixed-->
+	<summary>
+		<!--song being played-->
+		<div id="song-desc">
+			<div id="image"><img src="Images/cover1.jpg"></div>
+			<div id="song-info">
+				<div id="song">Song</div>
+				<div id="album">Artist</div>
+			</div>
+			<div id="icon">
+				<a href=""><i class="far fa-heart"></i></a>
+				<a href=""><i class="fas fa-ban"></i></a>
+			</div>
+		</div>
+		<!--song player-->
+		<div id="controller">
+			<!--for player icons-->
+			<div id="push">
+				<!--shuffle playlist-->
+				<span><a href="#"><i class="fas fa-random"></i></a></span>
+				<!--for backward-->
+				<span><a href="#"><i class="fas fa-step-backward"></i></a></span>
+				<!--anchor tag song paused-->
+				<span><a href="#play" id="pause"><i class="far fa-pause-circle"></i></a></span>
+				<!--playing the song after targetting from pause-->
+				<span><a href="#pause" id="play"><i class="fas fa-play"></i></a></span>
+				<!--for fast forwarding-->
+				<span><a href="#"><i class="fas fa-step-forward"></i></a></span>
+				<!--for repeating song-->
+				<span><a href="#"><i class="fas fa-redo"></i></i></a></span>
+			</div>
+			<!--for sliding button -->
+			<div id="slider">
+				<input type="range" name="slide" class="slide1" min="1.0" max="100.0">
+			</div>
+		</div>
+		<!--volume control-->
+		<!--
+		<audio controls>  </audio>-->
+		<div id="volume">
+			<a href="#"><i class="fas fa-headphones"></i></a>
+			<a href="#"><i class="fas fa-file-audio"></i></a>
+			<!--volume down-->
+			<a href="#"><i class="fas fa-volume-down"></i></a>
+			<!--for sliding button--> 
+			<div id="slider">
+				<input type="range" class="slide2" name="slide" min="1.0" max="100.0">
+			</div>
+			<!--volume up-->
+			<a href="#"><i class="fas fa-volume-up"></i></a>
+			<!--volume mute-->
+			<a href="#"><i class="fas fa-volume-mute"></i></a>
+		</div>
+	</summary>
+
+</body>
+</html>

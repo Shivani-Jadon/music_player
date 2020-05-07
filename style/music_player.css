@@ -1,0 +1,1253 @@
+body {
+    background-image: repeating-linear-gradient(90deg, purple, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), rgba(109, 192, 109, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+}
+
+
+/*styling navigation section*/
+nav{
+	box-shadow: 0px 0px 1rem black;
+}
+
+#large-nav{
+	display: flex;
+}
+
+/*music player logo*/
+#large-nav .logo{
+	display: flex;
+	margin: 1rem;
+	width: 20%;
+}
+
+#large-nav .logo-pic{
+	min-width: 4rem;
+	min-height: 4rem;
+	max-width: 4rem;
+	max-height: 4rem;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px gray;
+	margin: 0px;
+}
+
+#large-nav .logo .logo-pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+#large-nav .logo span{
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px 4px black;
+	font-size: 100%;
+	font-weight: bold;
+	align-items: center;
+	margin-top: 15%;
+	margin-left: -15%;
+}
+
+/*styling favorites*/
+#large-nav .fav{
+	margin: 2rem 1rem 0rem 1rem;
+	text-align: center;
+	width: 15%;
+}
+
+#large-nav .fav a{
+	color: rgba(168, 225, 195, 0.96);
+	text-shadow: 3px 3px 4px black;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+/*styling search bar option*/
+#large-nav .search{
+	margin: 2rem 1rem 0rem 1rem;
+	width: 35%;
+}
+
+#large-nav .search .search-box{
+	width: 90%;
+	height: 40%;
+	max-width: 15rem;
+	min-width: 9rem;
+	display: flex;
+	/*border-radius: 0% 20% 20% 0%;*/
+}
+
+#large-nav .search .search-box a{
+	width: 20%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	font-size: 1.2rem;
+	text-shadow: 3px 3px 4px black;
+}
+
+#large-nav .search .search-box textarea{
+	width: 80%;
+	height: 90%;
+	border: 0px;
+	text-align: center;
+	padding: 2px;
+	box-shadow: 3px 3px 4px black;
+}
+
+/*styling bell icon*/
+#large-nav .notify{
+	margin: 2rem 1rem 0rem 1rem;
+	width: 5%;
+}
+
+#large-nav .notify a{
+	/*width: 20%;
+	height: 100%;*/
+	color: rgba(168, 225, 195, 0.96);
+	text-align: center;
+	font-size: 1.5rem;
+	text-shadow: 3px 3px 4px black;
+}
+
+/*styling user*/
+#large-nav .id{
+	margin: 1rem;
+	width: 10%;
+}
+
+#large-nav .id .user{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(id_pic.jpg);
+	background-position: center;
+	background-size: auto;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px gray;
+	margin: 0.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: rgba(247, 208, 130, 1);
+	font-size: 2rem;
+}
+
+#large-nav a:hover{
+	color: rgba(197, 205, 216, 1);
+	transition: 1s;
+}
+
+#large-nav a i:hover{
+	color: rgba(197, 205, 216, 1);
+	transition: 1s;
+}
+
+#small-nav{
+	display: none;
+}
+
+/*applying media queris for extra large screens*/
+@media screen and (min-width: 900px){
+	#large-nav{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+/*applying media queries for small screen*/
+@media screen and (max-width: 572px){
+
+	#large-nav{
+		display: none;
+	}
+
+	#small-nav{
+		display: flex;
+	}
+
+	/*music player logo*/
+	#small-nav .logo{
+		display: flex;
+		margin: 1rem;
+		width: 35%;
+	}
+
+	#small-nav .logo-pic{
+		min-width: 4rem;
+		min-height: 4rem;
+		max-width: 4rem;
+		max-height: 4rem;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px gray;
+		margin: 0px;
+	}
+
+	#small-nav .logo .logo-pic img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+
+	#small-nav .logo span{
+		text-align: center;
+		color: orange;
+		font-size: 100%;
+		font-weight: bold;
+		align-items: center;
+		margin-top: 15%;
+		margin-left: -15%;
+	}
+
+	/*styling user*/
+	#small-nav .id{
+		margin: 1rem;
+		width: 25%;
+	}
+
+	#small-nav .id .user{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: url(id_pic.jpg);
+		background-position: center;
+		background-size: auto;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px gray;
+		margin: 0.5rem;
+		text-align: center;
+		font-weight: bold;
+		color:  rgba(247, 208, 130, 1);
+		font-size: 2rem;
+	}
+
+	/*styling bar menu :- notification, favorites and search*/
+	#small-nav .bar{
+		display: flex;
+		margin: 2rem 1rem 0rem 1rem;
+		width: 20%;
+		justify-content: flex-end;
+	}
+
+	#small-nav .bar #bar-icon{
+		width: 3rem;
+		height: 3rem;
+	}
+
+	#small-nav .bar i{
+		color: rgba(168, 225, 195, 0.96);
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	#small-nav #nav-menu{
+		display: none;
+		background-color: black;
+		width: 25%;
+		position: absolute;
+		top: 4rem;
+		left: 70%;
+		text-align: left;
+		margin: 0px;
+		padding-left: 0px;
+		border-radius: 10%;
+		opacity: 0.7;
+		box-shadow: 0rem 0rem 1rem silver;
+	}
+
+	/*making menu appear over hovering*/
+	#small-nav .bar #bar-icon:hover #nav-menu{
+		display: block;
+	}	
+	
+	#small-nav #nav-menu ul{
+		display: block;
+		margin: 0px;
+		padding: 0.1rem;
+		list-style: none;
+	}
+
+	#small-nav #nav-menu li{
+		margin: 0.4rem;
+	}
+
+	#small-nav #nav-menu li i{
+		font-size: 1.2rem;
+	}
+
+	#small-nav #nav-menu li .search-box{
+		display: flex;
+		width: 95%;
+		height: 1.2rem;
+		max-width: 7rem;
+		/*border-radius: 0% 20% 20% 0%;*/
+	}
+
+	#small-nav #nav-menu li .search-box textarea{
+		width: 80%;
+		height: 80%;
+		border: 0px;
+	}
+
+	/*search icon*/
+	#small-nav #nav-menu li .search-box i{
+		color: white;
+		text-align: center;
+		font-size: 0.8rem;
+		margin-left: 5px;
+	}
+
+	#small-nav #nav-menu li a{
+		font-size: 1rem;
+		text-decoration: none;
+		color: white;
+		font-family: sans-serif;
+		font-weight: bold;
+		margin: 0px;
+	}
+
+	/*transition effects on hovering over list elements*/
+	#small-nav #nav-menu li a:hover{
+		color: rgba(102, 102, 102, 1);
+		font-size: 1.1rem;
+		transition: 1s;
+	}
+
+	#small-nav #nav-menu li a i:hover{
+		color: rgba(102, 102, 102, 1);
+		font-size: 1rem;
+		transition: 1s;
+	}
+
+}
+
+
+/*styling main section*/
+
+/*article and aside section division for small screen*/
+@media screen and (max-width: 600px){
+
+	main{
+		display: block;
+	}
+	main article{
+		width: 100vw;
+	}
+
+	main aside{
+		width: 70vw;
+		margin-left: 15vw;
+	}
+}
+
+/*article and aside section division for medium screen*/
+@media screen and (min-width: 600px){
+
+	main{
+		display: flex;
+	}
+	main article{
+		width: 70vw;
+	}
+
+	main aside{
+		width: 30vw;
+	}
+}
+
+/*article and aside section division for large screen*/
+@media screen and (min-width: 900px){
+
+	main{
+		display: flex;
+	}
+	main article{
+		width: 75vw;
+	}
+
+	main aside{
+		width: 25vw;
+	}
+}
+
+/*styling song charts and common sections and elements*/
+main .song-chart{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2% 3%;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px;
+}
+
+main .song-chart .heading {
+    width: 90%;
+    color: rgba(247, 208, 130, 1);
+    text-align: left;
+    text-shadow: 4px 4px 4px black;
+}
+
+
+/*styling song chart section*/
+@keyframes revolve{
+	0%{
+		transform: translateX(0px) rotateY(0deg);
+	}
+
+	20%{
+		transform: translateX(0px) rotateY(90deg);
+	}
+
+	40%{
+		transform: translateX(0px) rotateY(180deg);
+	}
+
+	80%{
+		transform: translateX(0px) rotateY(270deg);
+	}
+
+	100%{
+		transform: translateX(0px) rotateY(360deg);
+	}
+}
+
+/*styling song chart section*/
+#box{
+	height: 10rem;
+	width: 10rem;
+	position: relative;
+	/*margin: 10rem;*/
+	transform-style: preserve-3d;
+	perspective: 10000px;
+	animation: revolve 14s ease-in-out infinite 2s;
+}
+
+.music-chart{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+main .song-chart .music-chart img{
+	width: 100%;
+	height: 100%;
+} 
+
+.one{
+
+}
+
+.two{
+	transform: rotateY(90deg) translateX(-5rem) translateZ(5rem);
+}
+
+.three{
+	transform: rotateY(-90deg) translateZ(5rem) translateX(5rem);
+}
+
+.four{
+	transform: translateZ(10rem);
+}
+
+@media screen and (min-width: 975px){
+
+	#box{
+		height: 10rem;
+		width: 20rem;
+		position: relative;
+		/*margin: 10rem;*/
+		transform-style: preserve-3d;
+		perspective: 10000px;
+		animation: revolve 20s ease-in-out infinite 2s;
+	}
+
+	.one{
+
+	}
+
+	.two{
+		transform: rotateY(90deg) translateX(-10rem) translateZ(10rem);
+	}
+
+	.three{
+		transform: rotateY(-90deg) translateZ(10rem) translateX(10rem);
+	}
+
+	.four{
+		transform: translateZ(20rem);
+	}
+
+}
+
+/*to pause animation ove hovering*/
+main .song-chart #box:hover{
+	animation-play-state: paused;
+}
+
+/*styling latest release*/
+main article .song-chart #latest-release{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	margin: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0px;
+}
+
+main article .song-chart #latest-release li{
+	width: 50%;
+	display: flex;
+	margin-bottom: 2%;
+}
+
+@media screen and (max-width: 724px){
+	main article .song-chart #latest-release li{
+		width: 90%;
+		display: flex;
+	}
+}
+
+/*styling image div*/
+main article .song-chart #latest-release li .latest-image{
+	width: 50%;
+	height: 7rem;
+	background-image: url(cover2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+main article .song-chart #latest-release li .latest-image #effect{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 173, 173, 0.75);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main article .song-chart #latest-release li .latest-image:hover #effect{
+	display: flex;
+}
+
+main article .song-chart #latest-release #expand{
+	width: 40%;
+	height: 90%;
+	margin: 3%
+	/*justify-content: flex-end;*/
+}
+/*styling icon and menu*/
+main article .song-chart #latest-release #expand #dot-icon{
+	width: 90%;
+	height: 20%;
+	margin-left: 70%;
+}
+
+main article .song-chart #latest-release #expand #dot-icon i{
+	color: rgba(221, 219, 136, 1);
+}
+
+main article .song-chart #latest-release #expand #menu1,#menu2,#menu3,#menu4{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 60%;
+    left: 35%;
+	overflow: hidden;
+	background-image: repeating-linear-gradient(90deg,rgba(92, 147, 124, 1), rgba(73, 109, 141, 1));
+	box-shadow: 0px 0px 1rem black;
+}
+
+main article .song-chart #latest-release #expand :target#menu1 {
+    width: 5rem;
+    height: 4.5rem;
+    top: 60%;
+    left: 35%; 
+    transition: width 0.5s ease-in;
+}
+
+
+main article .song-chart #latest-release #expand #menu2:target {
+    width: 5rem;
+    height: 4.5rem;
+    top: 60%;
+    left: 70%;
+    transition: width 0.5s ease-in;
+}
+
+main article .song-chart #latest-release #expand #menu3:target {
+    width: 5rem;
+    height: 4.5rem;
+    top: 80%;
+    left: 35%;
+    transition: width 0.5s ease-in;
+}
+
+main article .song-chart #latest-release #expand #menu4:target {
+    width: 5rem;
+    height: 4.5rem;
+    top: 80%;
+    left: 70%;
+    transition: width 0.5s ease-in;
+}
+
+/*styling content*/
+.list{
+	width: 90%;
+	list-style: none;
+	display: block;
+	padding: 0px;
+}
+
+.list li{
+	margin:0.3rem;
+}
+
+.list li a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main article .song-chart #latest-release #content{
+	height: 70%;
+	width: 90%;
+	display: flex;
+}
+
+main article .song-chart #latest-release #content div{
+	width: 40%;
+	height: 90%;
+	margin: 0.5rem;
+}
+
+main article .song-chart #latest-release #content div h4{
+	width: 90%;
+	height: 1.2rem;
+	margin: 0px;
+	color: black;
+}
+
+main article .song-chart #latest-release #content div span{
+	width: 90%;
+	height: 50%;
+	color: rgba(197, 193, 205, 1);
+}
+
+main article .song-chart #latest-release #content #date {
+    font-size: 0.7rem;
+    color: rgba(15, 61, 61, 1);
+    text-align: right;
+    margin-top: 1rem;
+}
+
+/*
+styling artist section*/
+main article #artists{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0px;
+	width: 90%;
+	margin:0px;
+}
+
+/*styling list-elements*/
+main article #artists li{
+	width: 8rem;
+}
+
+main article .song-chart #artists li #artist-box{
+	height: 8rem;
+	width: 8rem;
+	border-radius: 50%;
+}
+
+main article .song-chart #artists li #artist-box img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+main article .song-chart #artists li #artist-box a:hover{
+	opacity: 0.3;
+}
+
+/*styling names*/
+main article .song-chart #artists li #name {
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 724px){
+
+	main article #artists li{
+		width: 6rem;
+	}
+
+	main article .song-chart #artists li #artist-box{
+		height: 6rem;
+		width: 6rem;
+		border-radius: 50%;
+	}
+
+	main article .song-chart #artists li #name{
+		width: 6rem;
+	}
+}
+
+/*styling stations section*/
+/*styling logo for stations*/
+main article .song-chart #layer1{
+	display: flex;
+	width: 7rem;
+	height: 5rem;
+	background-color: rgba(254, 235, 138, 1);
+	border: 2px black solid;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+
+main article .song-chart #layer2{
+	width: 5rem;
+	height: 6rem;
+	background-color: rgba(95, 33, 145, 1);
+	border: 2px black solid;
+}
+
+main article .song-chart #layer3{
+	width: 4rem;
+	height: 4rem;
+	margin: auto;
+	margin-top: 20%;
+	border: 2px black solid;
+}
+
+main article .song-chart #layer3 img{
+	width: 100%;
+	height: 100%;
+}
+
+main article .song-chart #stations{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 75%;
+	height: 30%;
+} 
+
+main article .song-chart #stations li {
+    width: 10rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+main article .song-chart #stations li a{
+	background-image: url(cover4.jpg);
+	height: 8rem;
+	width: 10rem;
+	opacity: 0.6;
+	background-size: cover;
+	background-position: center;
+	text-decoration: none;
+	box-shadow: 0px 0px 1rem black;
+    border-radius: 20%;
+}
+
+main article .song-chart #stations li a div {
+    background: transparent;
+    margin: auto;
+    margin-top: 30%;
+    color: rgba(174, 203, 203, 1);
+    font-weight: bold;
+    font-size: 25px;
+    padding: auto;
+}
+
+/*effects on hovering*/
+main article .song-chart #stations li a:hover{
+	opacity: 1;
+	width: 10.5rem;
+	height: 8.5rem;
+}
+
+@media screen and (max-width: 574px){
+
+	main article .song-chart #stations li {
+	    width: 8rem;
+	    height: 6rem;
+	}
+
+	main article .song-chart #stations li a{
+		height: 6rem;
+		width: 8rem;
+	}	
+}
+
+/*
+/*styling channel section*/
+main article .song-chart #channels{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0px;
+	width: 90%;
+	height: 30%;
+	margin:0px;
+} 
+
+main article .song-chart #channels li {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+main article .song-chart #channels li a{
+	height: inherit;
+	width: inherit;
+	background-image: url(cover11.jpg);
+	background-size: cover;
+	background-position: center;
+	text-decoration: none;
+	box-shadow: 0px 0px 1rem black;
+}
+
+main article .song-chart #channels li a div{
+	height: inherit;
+	background: transparent;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	opacity: 1;
+}
+
+/*effects on hovering*/
+main article .song-chart #channels li a:hover{
+	background-size: auto;
+	transition: all 0.5s ease-in;
+}
+
+/*
+Styling Latest-english section*/
+main article .song-chart .latest-english{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0px;
+	width: 90%;
+	margin:0px;
+} 
+
+main article .song-chart #latest-english li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+main article .song-chart .latest-english li #image{
+	height: 5rem;
+	width: 5rem;
+	margin-left: 20%;
+}
+
+main article .song-chart .latest-english li #image img{
+	width: 100%;
+	height: 100%;
+}
+
+main article .song-chart .latest-english li #content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+main article .song-chart .latest-english li #content h3{
+	width: 50%;
+	margin: 1%;
+}
+
+main article .song-chart .latest-english li #content span{
+	width: 50%;
+	text-align: right;
+	font-size: 0.7rem;
+}
+
+main article .song-chart .latest-english li #image:hover{
+	box-shadow: 0px 0px 20px black;
+}
+
+/*
+	Styling Aside Section of main*/
+/*styling queue header*/
+main aside #aside-header{
+	width: 100%;
+	display: inline-grid;
+	grid-template-columns: 60% 40%;
+	align-items: center;
+	text-align: center;
+}
+
+main aside #aside-header h1{
+	color: rgba(83, 51, 148, 1);
+	font-style: italic;
+	font-size: 2rem;
+	text-shadow: 2px 2px 4px rgba(83, 51, 148, 1);
+}
+/*
+@media screen and (max-width:600px){
+	main aside #aside-header #more{
+		margin-left: 18%;
+		margin-top: 2rem;
+	}	
+}
+
+main aside #aside-header #more{
+	/*	margin-left: 25%;
+		margin-top: 2rem;
+}
+*/
+main aside #aside-header #more button{
+	background-color: transparent;
+	color: rgba(83, 51, 148, 1);
+	border-radius: 10%;
+	border: 2px rgba(83, 51, 148, 1) solid;
+	font-weight: 900;
+	/*text-shadow: 2px 2px 4px rgba(83, 51, 148, 1);*/
+	box-shadow: 2px 2px 4px rgba(83, 51, 148, 1);
+}
+
+main aside #aside-header #more #more-menu {
+    display: none;
+    background-color: black;
+    width: 5rem;
+    position: absolute;
+    text-align: left;
+    margin: 0px;
+    padding-left: 0px;
+    opacity: 0.7;
+    box-shadow: 0rem 0rem 1rem silver;
+}
+
+	/*making menu appear over hovering*/
+main aside #aside-header #more:hover #more-menu{
+		display: block;
+	}	
+	
+main aside #aside-header #more #more-menu ul{
+		display: block;
+		margin: 0px;
+		padding: 0.1rem;
+		list-style: none;
+	}
+
+main aside #aside-header #more #more-menu ul li{
+		margin: 0.4rem;
+	}
+
+main aside #aside-header #more #more-menu ul li a{
+	text-decoration: none;
+	color: white;
+}	
+
+main aside #aside-header #more #more-menu ul li a:hover{
+	color: rgba(83, 51, 148, 1);
+	transition: all 1s ease-in-out;
+}
+
+/*styling queue list items*/
+main aside #list{
+	display: block;
+	padding: 0px;
+}
+
+main aside #list li{
+	width: 90%;
+	height: 20%;
+	margin: 1rem;
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+	color: rgba(83, 51, 148, 1);
+}
+
+main aside #list li #item{
+	display: flex;
+	justify-content: center;
+	margin-left: 1.5rem;
+	margin-top: -2rem;
+}
+
+main aside #list li #image{
+	width: 2rem;
+	height: 2rem;
+	margin: 3%;
+}
+
+main aside #list li #image img{
+	width: 100%;
+	height: 100%;
+}
+
+main aside #list li #song-info{
+	width: 50%;
+	height: 90%;
+	margin: 1%;
+}
+
+main aside #list li #song-info #song{
+	font-weight: bold;
+	color: black;
+}
+
+main aside #list li #song-info #album{
+	font-style: italic;
+	color: rgba(197, 193, 205, 1);
+}
+
+main aside #list li #icon{
+	width: 10%;
+	height: 90%;
+	margin: 5%;
+}
+
+main aside #list li #icon i{
+	color: rgba(240, 66, 87, 1);
+}
+
+/*
+Styling summary section 
+Summary section is fixed wrt to the page*/
+summary {
+    width: 100%;
+    height: 15vh;
+    display: inline-grid;
+    grid-template-columns: 20% 50% 25%;
+    position: fixed;
+    bottom: 0px;
+    background: black;
+    box-shadow: 0px 0px 1rem black;
+}
+
+@media screen and (max-width: 650px){
+	summary{
+		display: inline-grid;
+		height: 20vh;
+		grid-template-rows: 10vh 10vh;
+    	grid-template-columns: 50% 50%;
+	}
+}
+
+/*styling song-description section*/
+summary #song-desc{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 650px){
+	summary #song-desc{
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+
+summary #song-desc #image{
+	width: 5rem;
+	height: 3rem;
+	margin: 3%;
+}
+
+summary #song-desc #image img{
+	width: 100%;
+	height: 100%;
+}
+
+summary #song-desc #song-info{
+	width: 4rem;
+	margin: 1%;
+	align-items: center;
+}
+
+summary #song-desc #song-info #song{
+	font-weight: bold;
+	color: gray;
+}
+
+summary #song-desc #song-info #album{
+	font-style: italic;
+	color: gray;
+}
+
+summary #song-desc #icon{
+	width: 3rem;
+	text-align: center;
+}
+
+summary #song-desc #icon i{
+	display: inline-block;
+	color: rgba(216, 141, 185, 1);
+}
+
+/*for hovering effect*/
+summary #song-desc #icon i:hover{
+	color: gray;
+}
+
+/*styling song controller section*/
+summary #controller{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 650px){
+	summary #controller{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+summary #controller #push span{
+	width: 2rem;
+	height: 2rem;
+	margin-left: 1rem 2rem;
+}
+
+summary #controller #push span i{
+	color: rgba(191, 174, 59, 1);
+	margin: 10px;
+	font-size: 1rem;
+}
+
+summary #controller #push span i:hover{
+	color: gray;
+}
+
+/*adding play pause effect*/
+summary #controller #push #pause{
+	display: none;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+summary #controller #push #play:target #pause{
+	display: block;
+}
+
+/*sliding sliding button of the controller*/
+
+summary #slider .slide1{
+  -webkit-appearance: none;
+  width: 15rem;
+  height: 5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+
+summary #slider .slide1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 40%; 
+  background: rgba(191, 174, 59, 1);
+  cursor: pointer;
+}
+
+/*styling volume section*/
+summary #volume{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 650px){
+	summary #volume{
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+
+summary #volume i{
+	color: rgba(13, 114, 111, 1);
+	margin: 5px;
+	font-size: 1rem;
+}
+
+summary #volume i:hover{
+	color:cyan;
+}
+
+/*styling sliding button of volume controller*/
+summary #volume #slider .slide2{
+  -webkit-appearance: none;
+  width: 7rem;
+  height: 5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/*for small screen*/
+@media screen and (max-width: 650px){
+	summary #volume #slider .slide2{
+	  width: 5rem;
+	}
+}
+
+summary #volume #slider .slide2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background:rgba(13, 114, 111, 1);
+  cursor: pointer;
+}

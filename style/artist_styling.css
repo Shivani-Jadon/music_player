@@ -1,0 +1,737 @@
+body {
+    background-image: repeating-linear-gradient(90deg, purple, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), rgba(109, 192, 109, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+nav{
+	box-shadow: 0px 0px 1rem black;
+}
+
+#small-nav{
+		display: flex;
+	}
+
+	/*music player logo*/
+	#small-nav .logo{
+		display: flex;
+		margin: 1rem;
+		width: 30%;
+	}
+
+	#small-nav .logo-pic{
+		min-width: 4rem;
+		min-height: 4rem;
+		max-width: 4rem;
+		max-height: 4rem;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px gray;
+		margin: 0px;
+	}
+
+	#small-nav .logo .logo-pic img{
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+
+	#small-nav .logo span {
+	    text-align: center;
+	    color: white;
+	    font-size: 100%;
+	    font-style: '';
+	    font-weight: bold;
+	    align-items: center;
+	    position: relative;
+	    top: 25%;
+	    left: -7%;
+	    text-shadow: 4px 4px 5px black;
+	}
+
+	/*styling home*/
+	#small-nav .back{
+		display: flex;
+		margin: 2rem 1rem 0rem 1rem;
+		width: 20%;
+	}
+
+	#small-nav .back #home{
+		width: 3rem;
+		height: 3rem;
+	}
+
+	#small-nav .back #home i{
+		/*width: 20%;
+		height: 100%;*/
+		color: rgba(168, 225, 195, 0.96);
+		text-align: center;
+		font-size: 2rem;
+		text-shadow: 3px 3px 4px black;
+	}
+
+	#small-nav  .back #home i:hover{
+		color:rgba(197, 205, 216, 1);
+	}
+
+	/*styling user*/
+	#small-nav .id{
+		margin: 1rem;
+		width: 20%;
+	}
+
+	#small-nav .id .user{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: url(id_pic.jpg);
+		background-position: center;
+		background-size: auto;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px gray;
+		margin: 0.5rem;
+		text-align: center;
+		font-weight: bold;
+		color: rgba(247, 208, 130, 1);
+		font-size: 2rem;
+	}
+
+	/*styling bar menu :- notification, favorites and search*/
+	#small-nav .bar{
+		display: flex;
+		margin: 2rem 1rem 0rem 1rem;
+		width: 20%;
+		text-align: right;
+	}
+
+	#small-nav .bar #bar-icon{
+		width: 3rem;
+		height: 3rem;
+	}
+
+	#small-nav .bar i{
+		/*width: 20%;
+		height: 100%;*/
+		color: rgba(168, 225, 195, 0.96);
+		text-align: center;
+		font-size: 1.5rem;
+		text-shadow: 3px 3px 4px black;
+	}
+
+	#small-nav #nav-menu{
+		display: none;
+		background-color: black;
+		width: 100px;
+		position: absolute;
+		top: 4rem;
+		left: 70%;
+		text-align: left;
+		margin: 0px;
+		padding-left: 0px;
+		border-radius: 10%;
+		opacity: 0.7;
+		box-shadow: 0rem 0rem 1rem silver;
+	}
+
+	/*making menu appear over hovering*/
+	#small-nav .bar #bar-icon:hover #nav-menu{
+		display: block;
+	}	
+	
+	#small-nav #nav-menu ul{
+		display: block;
+		margin: 0px;
+		padding: 0.1rem;
+		list-style: none;
+	}
+
+	#small-nav #nav-menu li{
+		margin: 0.4rem;
+	}
+
+	#small-nav #nav-menu li i{
+		font-size: 1.2rem;
+	}
+
+	#small-nav #nav-menu li .search-box{
+		display: flex;
+		width: 95%;
+		height: 1.2rem;
+		max-width: 7rem;
+		/*border-radius: 0% 20% 20% 0%;*/
+	}
+
+	#small-nav #nav-menu li .search-box textarea{
+		width: 80%;
+		height: 80%;
+		border: 0px;
+	}
+
+	/*search icon*/
+	#small-nav #nav-menu li .search-box i{
+		color: white;
+		text-align: center;
+		font-size: 0.8rem;
+		margin-left: 5px;
+	}
+
+	#small-nav #nav-menu li a{
+		font-size: 1rem;
+		text-decoration: none;
+		color: white;
+		font-family: sans-serif;
+		font-weight: bold;
+		margin: 0px;
+	}
+
+	/*transition effects on hovering over list elements*/
+	#small-nav #nav-menu li a:hover{
+		color: rgba(102, 102, 102, 1);
+		font-size: 1.1rem;
+		transition: 1s;
+	}
+
+	#small-nav #nav-menu li a i:hover{
+		font-size: 1rem;
+		color: rgba(102, 102, 102, 1);
+		transition: 1s;
+	}
+
+@media screen and (min-width: 900px){
+	#small-nav{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+
+/*styling main section*/
+main{
+	display: flex;
+}
+
+main article{
+	width: 70vw;
+	margin: 20px 40px;
+}
+
+main aside{
+	width: 30vw;
+	margin: 1rem;
+	
+}
+
+@media screen and (max-width: 700px){
+	main article{
+		width: 60vw;
+		margin: 20px 10px;
+	}
+
+	main aside{
+		width: 40vw;
+		margin: 1rem;	
+	}
+	
+}
+
+@media screen and (max-width: 524px){
+
+	main{
+		display: block;
+	}
+
+	main aside{
+		margin-left: 15vw;
+		margin-top: 1rem;
+	}
+}
+
+/*styling card section*/
+main article .card {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 40% 60%;
+    background: rgba(0, 6, 26, 0.68);
+    box-shadow: 10px 10px 30px black;
+}
+
+main article .card #image{
+	width: 100%;
+	height: 300px;
+}
+
+@media screen and (max-width: 700px)
+{
+	main article .card {
+	    width: 100%;
+	    display: block;
+	}
+
+	main article .card #image{
+		width: 100%;
+		height: 200px;
+	}
+}
+
+main article .card #image img{
+	width: inherit;
+	height: inherit;
+}
+
+main article .card #content{
+	margin: auto;
+	text-align: justify;
+	padding: 10px;
+}
+
+main article .card #content h1{
+	color: rgba(242, 216, 146, 1);
+}
+
+main article .card #content p {
+    color: rgba(190, 208, 208, 1);
+    line-height: 20px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+main article .card #content #press button {
+    width: 70px;
+    height: 25px;
+    margin-right: 30px;
+    background: transparent;
+    border: 2px rgba(242, 216, 146, 1) solid;
+    color: rgba(242, 216, 146, 1);
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    box-shadow: 0px 0px 10px black;
+}
+
+main article .card #content #press button:hover{
+	background-color: black;
+}
+
+/*
+	Styling playlist Section of main*/
+/*styling queue header*/
+main article .channel-playlist #heading {
+    color: rgba(23, 66, 115, 1);
+    text-align: center;
+    font-size: 20px;
+    border: ;
+    text-shadow: 2px 2px 5px rgba(23,66,115,1);
+}
+
+main article .channel-playlist #heading h1{
+	color: cyan;
+	font-style: italic;
+	margin-left: 10%;
+}
+
+
+/*styling recommended list*/
+main article .channel-playlist #latest-release{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	margin: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0px;
+}
+
+main article .channel-playlist #latest-release li {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    background: rgba(166, 170, 181, 0.4);
+}
+
+/*styling image div*/
+
+main article .channel-playlist #latest-release .latest-image {
+    width: 30%;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main article .channel-playlist #latest-release .latest-image img {
+    height: 80%;
+    width: 60%;
+}
+
+main article .channel-playlist #latest-release #content {
+    height: 50%;
+    width: 60%;
+    display: flex;
+}
+
+main article .channel-playlist #latest-release #content div {
+    width: 40%;
+    height: 100%;
+    margin: 0.5rem;
+    position: relative;
+    top: 25%;
+}
+
+main article .channel-playlist #latest-release #content div h4{
+	width: 90%;
+	height: 50%;
+	margin: 0px;
+	color: rgba(23, 66, 115, 1);
+}
+
+main article .channel-playlist #latest-release #content div span{
+	width: 90%;
+	height: 50%;
+	color: black;
+}
+
+main article .channel-playlist #latest-release #content #date {
+    font-size: 12px;
+    color: rgba(187, 211, 211, 1);
+    text-align: right;
+    margin-top: 1rem;
+}
+
+main article .channel-playlist #latest-release #content #icon{
+    text-align: right;
+    margin: 10px;
+    font-size: 20px;
+}
+
+main article .channel-playlist #latest-release #content #icon i{
+	color: #86d0dc;
+}
+
+/*styling aside section*/
+/*styling heading*/
+main aside .aside-heading{
+	text-align: center;
+}
+
+
+/*styling queue list items*/
+main aside .side-section1 .aside-heading h2 {
+    color: rgba(242, 216, 146, 1);
+    font-style: italic;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px black;
+}
+
+main aside #list{
+	display: block;
+	padding: 0px;
+}
+
+main aside #list li{
+	width: 90%;
+	height: 20%;
+	margin: 1rem;
+	list-style-type: decimal-leading-zero;
+	list-style-position: inside;
+	color: rgba(176, 64, 116, 1);
+}
+
+main aside #list li #item{
+	display: flex;
+	margin-left: 1.5rem;
+	margin-top: -2rem;
+}
+
+main aside #list li #image{
+	width: 2rem;
+	height: 2rem;
+	margin: 3%;
+}
+
+main aside #list li #image img{
+	width: 100%;
+	height: 100%;
+}
+
+main aside #list li #song-info{
+	width: 50%;
+	height: 90%;
+	margin: 1%;
+}
+
+main aside #list li #song-info #song{
+	font-weight: bold;
+	color: black;
+}
+
+main aside #list li #song-info #album{
+	font-style: italic;
+	color: rgba(197, 193, 205, 1);
+}
+
+main aside #list li #icon{
+	width: 10%;
+	height: 90%;
+	margin: 5%;
+}
+
+main aside #list li #icon i{
+	color: rgba(176, 64, 116, 1);
+}
+
+/*styling recommended artist section*/
+main aside .side-section2 .aside-heading h2{
+	color: rgba(242, 216, 146, 1);
+	font-style: italic;
+	text-shadow: 2px 2px 3px black;
+}
+
+main aside .side-section2 #artists{
+	list-style: none;
+	padding: 0px;
+	width: 90%;
+	margin:0px;
+}
+
+/*styling list-elements*/
+main aside .side-section2 #artists li {
+    width: 8rem;
+    position: relative;
+    left: 25%;
+}
+
+main aside .side-section2 #artists li #artist-box{
+	height: 8rem;
+	width: 8rem;
+	border-radius: 50%;
+}
+
+main aside .side-section2 #artists li #artist-box img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+main aside .side-section2 #artists li #artist-box a:hover{
+	opacity: 0.3;
+}
+
+/*styling names*/
+main aside .side-section2 #artists li #name{
+	text-align: center;
+	color: black;
+	font-size: 1rem;
+	font-family: sans-serif;
+	font-style: italic;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+
+/*
+Styling summary section 
+Summary section is fixed wrt to the page*/
+summary {
+    width: 100%;
+    height: 15vh;
+    display: inline-grid;
+    grid-template-columns: 20% 50% 25%;
+    position: fixed;
+    bottom: 0px;
+    background: black;
+    box-shadow: 0px 0px 1rem black;
+}
+
+@media screen and (max-width: 650px){
+	summary{
+		display: inline-grid;
+		height: 20vh;
+		grid-template-rows: 10vh 10vh;
+    	grid-template-columns: 50% 50%;
+	}
+}
+
+/*styling song-description section*/
+summary #song-desc{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 650px){
+	summary #song-desc{
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+
+summary #song-desc #image{
+	width: 5rem;
+	height: 3rem;
+	margin: 3%;
+}
+
+summary #song-desc #image img{
+	width: 100%;
+	height: 100%;
+}
+
+summary #song-desc #song-info{
+	width: 4rem;
+	margin: 1%;
+	align-items: center;
+}
+
+summary #song-desc #song-info #song{
+	font-weight: bold;
+	color: gray;
+}
+
+summary #song-desc #song-info #album{
+	font-style: italic;
+	color: gray;
+}
+
+summary #song-desc #icon{
+	width: 3rem;
+	text-align: center;
+}
+
+summary #song-desc #icon i{
+	display: inline-block;
+	color: rgba(216, 141, 185, 1);
+}
+
+/*for hovering effect*/
+summary #song-desc #icon i:hover{
+	color: gray;
+}
+
+/*styling song controller section*/
+summary #controller{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 650px){
+	summary #controller{
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+summary #controller #push span{
+	width: 2rem;
+	height: 2rem;
+	margin-left: 1rem 2rem;
+}
+
+summary #controller #push span i{
+	color: rgba(191, 174, 59, 1);
+	margin: 10px;
+	font-size: 1rem;
+}
+
+summary #controller #push span i:hover{
+	color: gray;
+}
+
+/*adding play pause effect*/
+summary #controller #push #pause{
+	display: none;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+summary #controller #push #play:target #pause{
+	display: block;
+}
+
+/*sliding sliding button of the controller*/
+
+summary #slider .slide1{
+  -webkit-appearance: none;
+  width: 15rem;
+  height: 5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+
+summary #slider .slide1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 40%; 
+  background:rgba(191, 174, 59, 1);
+  cursor: pointer;
+}
+
+/*styling volume section*/
+summary #volume{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 650px){
+	summary #volume{
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+
+summary #volume i{
+	color: rgba(13, 114, 111, 1);
+	margin: 5px;
+	font-size: 1rem;
+}
+
+summary #volume i:hover{
+	color:cyan;
+}
+
+/*styling sliding button of volume controller*/
+summary #volume #slider .slide2{
+  -webkit-appearance: none;
+  width: 7rem;
+  height: 5px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/*for small screen*/
+@media screen and (max-width: 650px){
+	summary #volume #slider .slide2{
+	  width: 5rem;
+	}
+}
+
+summary #volume #slider .slide2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background:rgba(13, 114, 111, 1);
+  cursor: pointer;
+}
