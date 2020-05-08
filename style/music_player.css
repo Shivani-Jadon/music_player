@@ -1,5 +1,5 @@
 body {
-    background-image: repeating-linear-gradient(90deg, purple, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), rgba(109, 192, 109, 1));
+    background-image: repeating-linear-gradient(90deg, black, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), black);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,6 +90,10 @@ nav{
 	text-shadow: 3px 3px 4px black;
 }
 
+#large-nav .search .search-box a i:hover{
+	color: rgba(168, 225, 195, 0.96);
+}
+
 #large-nav .search .search-box textarea{
 	width: 80%;
 	height: 90%;
@@ -97,6 +101,8 @@ nav{
 	text-align: center;
 	padding: 2px;
 	box-shadow: 3px 3px 4px black;
+	border: 0;
+    border-radius: 10px;
 }
 
 /*styling bell icon*/
@@ -124,7 +130,7 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(id_pic.jpg);
+	background-image: url(../Images/id_pic.jpg);
 	background-position: center;
 	background-size: auto;
 	width: 3rem;
@@ -139,12 +145,12 @@ nav{
 }
 
 #large-nav a:hover{
-	color: rgba(197, 205, 216, 1);
+	color: white;
 	transition: 1s;
 }
 
 #large-nav a i:hover{
-	color: rgba(197, 205, 216, 1);
+	color: white;
 	transition: 1s;
 }
 
@@ -196,7 +202,7 @@ nav{
 
 	#small-nav .logo span{
 		text-align: center;
-		color: orange;
+		color: white;
 		font-size: 100%;
 		font-weight: bold;
 		align-items: center;
@@ -214,7 +220,7 @@ nav{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-image: url(id_pic.jpg);
+		background-image: url(../Images/id_pic.jpg);
 		background-position: center;
 		background-size: auto;
 		width: 3rem;
@@ -298,7 +304,7 @@ nav{
 
 	/*search icon*/
 	#small-nav #nav-menu li .search-box i{
-		color: white;
+		color: rgba(168, 225, 195, 0.96);
 		text-align: center;
 		font-size: 0.8rem;
 		margin-left: 5px;
@@ -307,7 +313,7 @@ nav{
 	#small-nav #nav-menu li a{
 		font-size: 1rem;
 		text-decoration: none;
-		color: white;
+		color: rgba(168, 225, 195, 0.96);
 		font-family: sans-serif;
 		font-weight: bold;
 		margin: 0px;
@@ -315,13 +321,13 @@ nav{
 
 	/*transition effects on hovering over list elements*/
 	#small-nav #nav-menu li a:hover{
-		color: rgba(102, 102, 102, 1);
+		color: lightgrey;
 		font-size: 1.1rem;
 		transition: 1s;
 	}
 
 	#small-nav #nav-menu li a i:hover{
-		color: rgba(102, 102, 102, 1);
+		color: lightgrey;
 		font-size: 1rem;
 		transition: 1s;
 	}
@@ -380,18 +386,16 @@ nav{
 /*styling song charts and common sections and elements*/
 main .song-chart{
 	display: flex;
-	flex-wrap: wrap;
 	margin: 2% 3%;
-	justify-content: space-around;
 	align-items: center;
 	padding: 0px;
 }
 
 main .song-chart .heading {
-    width: 90%;
-    color: rgba(247, 208, 130, 1);
+    color: rgba(168, 225, 195, 0.96);
     text-align: left;
-    text-shadow: 4px 4px 4px black;
+	text-shadow: 4px 4px 4px black;
+	margin: 2%;
 }
 
 
@@ -402,26 +406,26 @@ main .song-chart .heading {
 	}
 
 	20%{
-		transform: translateX(0px) rotateY(90deg);
+		transform: translateX(15vw) rotateY(90deg);
 	}
 
 	40%{
-		transform: translateX(0px) rotateY(180deg);
+		transform: translateX(30vw) rotateY(180deg);
 	}
 
 	80%{
-		transform: translateX(0px) rotateY(270deg);
+		transform: translateX(60vw) rotateY(270deg);
 	}
 
 	100%{
-		transform: translateX(0px) rotateY(360deg);
+		transform: translateX(-60vw) rotateY(360deg);
 	}
 }
 
 /*styling song chart section*/
 #box{
-	height: 10rem;
-	width: 10rem;
+	height: 20vh;
+	width: 30vh;
 	position: relative;
 	/*margin: 10rem;*/
 	transform-style: preserve-3d;
@@ -440,51 +444,18 @@ main .song-chart .music-chart img{
 	height: 100%;
 } 
 
-.one{
-
-}
-
 .two{
-	transform: rotateY(90deg) translateX(-5rem) translateZ(5rem);
+	transform: rotateY(90deg) translateX(-15vh) translateZ(15vh);
 }
 
 .three{
-	transform: rotateY(-90deg) translateZ(5rem) translateX(5rem);
+	transform: rotateY(-90deg) translateZ(15vh) translateX(15vh);
 }
 
 .four{
-	transform: translateZ(10rem);
+	transform: translateZ(30vh);
 }
 
-@media screen and (min-width: 975px){
-
-	#box{
-		height: 10rem;
-		width: 20rem;
-		position: relative;
-		/*margin: 10rem;*/
-		transform-style: preserve-3d;
-		perspective: 10000px;
-		animation: revolve 20s ease-in-out infinite 2s;
-	}
-
-	.one{
-
-	}
-
-	.two{
-		transform: rotateY(90deg) translateX(-10rem) translateZ(10rem);
-	}
-
-	.three{
-		transform: rotateY(-90deg) translateZ(10rem) translateX(10rem);
-	}
-
-	.four{
-		transform: translateZ(20rem);
-	}
-
-}
 
 /*to pause animation ove hovering*/
 main .song-chart #box:hover{
@@ -493,33 +464,24 @@ main .song-chart #box:hover{
 
 /*styling latest release*/
 main article .song-chart #latest-release{
-	width: 100%;
 	list-style: none;
 	display: flex;
-	margin: 1rem;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 0px;
 }
 
 main article .song-chart #latest-release li{
-	width: 50%;
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 2%;
-}
-
-@media screen and (max-width: 724px){
-	main article .song-chart #latest-release li{
-		width: 90%;
-		display: flex;
-	}
 }
 
 /*styling image div*/
 main article .song-chart #latest-release li .latest-image{
-	width: 50%;
-	height: 7rem;
-	background-image: url(cover2.jpg);
+	width: 20vw;
+	max-width: 10rem;
+	background-image: url(../Images/cover2.jpg);
 	background-position: center;
 	background-size: cover;
 }
@@ -539,77 +501,47 @@ main article .song-chart #latest-release li .latest-image:hover #effect{
 	display: flex;
 }
 
-main article .song-chart #latest-release #expand{
-	width: 40%;
-	height: 90%;
-	margin: 3%
-	/*justify-content: flex-end;*/
-}
 /*styling icon and menu*/
-main article .song-chart #latest-release #expand #dot-icon{
-	width: 90%;
-	height: 20%;
+main article .song-chart #latest-release .expand .dot-icon{
 	margin-left: 70%;
 }
 
-main article .song-chart #latest-release #expand #dot-icon i{
-	color: rgba(221, 219, 136, 1);
+main article .song-chart #latest-release .expand .dot-icon i{
+	color: rgba(197, 193, 205, 1);
 }
 
-main article .song-chart #latest-release #expand #menu1,#menu2,#menu3,#menu4{
-	width: 0px;
-	height: 0px;
-	position: absolute;
-	top: 60%;
-    left: 35%;
-	overflow: hidden;
-	background-image: repeating-linear-gradient(90deg,rgba(92, 147, 124, 1), rgba(73, 109, 141, 1));
-	box-shadow: 0px 0px 1rem black;
+main article .song-chart #latest-release .expand .dot-icon i:hover{
+	color: black;
 }
 
-main article .song-chart #latest-release #expand :target#menu1 {
-    width: 5rem;
-    height: 4.5rem;
-    top: 60%;
-    left: 35%; 
-    transition: width 0.5s ease-in;
-}
-
-
-main article .song-chart #latest-release #expand #menu2:target {
-    width: 5rem;
-    height: 4.5rem;
-    top: 60%;
-    left: 70%;
-    transition: width 0.5s ease-in;
-}
-
-main article .song-chart #latest-release #expand #menu3:target {
-    width: 5rem;
-    height: 4.5rem;
-    top: 80%;
-    left: 35%;
-    transition: width 0.5s ease-in;
-}
-
-main article .song-chart #latest-release #expand #menu4:target {
-    width: 5rem;
-    height: 4.5rem;
-    top: 80%;
-    left: 70%;
-    transition: width 0.5s ease-in;
-}
 
 /*styling content*/
+.menu{
+	display: none;
+	max-height: 0;
+	width: 100%;
+}
+
 .list{
-	width: 90%;
-	list-style: none;
 	display: block;
+	list-style: none;
+	width: 5rem;
 	padding: 0px;
+	background-color: darkgrey;
+	box-shadow: 0px 0px 10px black;
+}
+
+/* making options available on hovering the dot icon */
+main article .song-chart #latest-release .expand .dot-icon:hover .menu{
+	display: block;
+	max-height: 100%;
+	transition: all 1s ease-in-out 0.2s;
 }
 
 .list li{
-	margin:0.3rem;
+	text-align: end;
+	padding: 5px;
+	border-bottom: 2px black solid;
 }
 
 .list li a {
@@ -618,6 +550,9 @@ main article .song-chart #latest-release #expand #menu4:target {
     font-weight: bold;
 }
 
+.list li a:hover{
+	color: whitesmoke;
+}
 
 main article .song-chart #latest-release #content{
 	height: 70%;
@@ -646,32 +581,34 @@ main article .song-chart #latest-release #content div span{
 
 main article .song-chart #latest-release #content #date {
     font-size: 0.7rem;
-    color: rgba(15, 61, 61, 1);
+    color: rgba(197, 193, 205, 1);
     text-align: right;
     margin-top: 1rem;
 }
 
 /*
-styling artist section*/
+styling artist section of the music player*/
 main article #artists{
 	list-style: none;
+	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	padding: 0px;
-	width: 90%;
-	margin:0px;
+	overflow-x: scroll;
+}
+/* hiding scroll bars */
+main article #artists::-webkit-scrollbar{
+	display: none;
 }
 
 /*styling list-elements*/
 main article #artists li{
-	width: 8rem;
+	margin-left: 2%;
 }
 
 main article .song-chart #artists li #artist-box{
-	height: 8rem;
-	width: 8rem;
 	border-radius: 50%;
+	width: 5rem;
+	height: 5rem;
 }
 
 main article .song-chart #artists li #artist-box img{
@@ -687,7 +624,7 @@ main article .song-chart #artists li #artist-box a:hover{
 /*styling names*/
 main article .song-chart #artists li #name {
     text-align: center;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(197, 193, 205, 1);
     font-size: 1rem;
     font-family: sans-serif;
     font-style: italic;
@@ -695,23 +632,6 @@ main article .song-chart #artists li #name {
     font-weight: bold;
 }
 
-
-@media screen and (max-width: 724px){
-
-	main article #artists li{
-		width: 6rem;
-	}
-
-	main article .song-chart #artists li #artist-box{
-		height: 6rem;
-		width: 6rem;
-		border-radius: 50%;
-	}
-
-	main article .song-chart #artists li #name{
-		width: 6rem;
-	}
-}
 
 /*styling stations section*/
 /*styling logo for stations*/
@@ -749,15 +669,17 @@ main article .song-chart #layer3 img{
 main article .song-chart #stations{
 	list-style: none;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 75%;
-	height: 30%;
+	overflow-x: scroll;
+	padding: 0px;
 } 
 
+main article .song-chart #stations::-webkit-scrollbar{
+	display: none;
+}
+
 main article .song-chart #stations li {
-    width: 10rem;
-    height: 8rem;
+    /* width: 10rem;
+    height: 8rem; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -766,7 +688,7 @@ main article .song-chart #stations li {
 }
 
 main article .song-chart #stations li a{
-	background-image: url(cover4.jpg);
+	background-image: url(../Images/cover4.jpg);
 	height: 8rem;
 	width: 10rem;
 	opacity: 0.6;
@@ -834,7 +756,7 @@ main article .song-chart #channels li {
 main article .song-chart #channels li a{
 	height: inherit;
 	width: inherit;
-	background-image: url(cover11.jpg);
+	background-image: url(../Images/cover11.jpg);
 	background-size: cover;
 	background-position: center;
 	text-decoration: none;
@@ -865,25 +787,22 @@ Styling Latest-english section*/
 main article .song-chart .latest-english{
 	list-style: none;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	padding: 0px;
-	width: 90%;
-	margin:0px;
+	overflow-x: scroll;
 } 
 
-main article .song-chart #latest-english li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0.5rem;
+main article .song-chart .latest-english::-webkit-scrollbar{
+	display: none;
+}
+
+main article .song-chart .latest-english li{
+	margin: 0.5rem;
+	text-align: center;
 }
 
 main article .song-chart .latest-english li #image{
 	height: 5rem;
 	width: 5rem;
-	margin-left: 20%;
 }
 
 main article .song-chart .latest-english li #image img{
@@ -891,32 +810,46 @@ main article .song-chart .latest-english li #image img{
 	height: 100%;
 }
 
-main article .song-chart .latest-english li #content {
+/* main article .song-chart .latest-english li #content {
     display: flex;
     text-align: center;
     justify-content: center;
     padding: 5px;
-}
+} */
 
 
 main article .song-chart .latest-english li #content h3{
-	width: 50%;
-	margin: 1%;
+	color: rgba(197, 193, 205, 1);
+	margin: 0;
 }
 
 main article .song-chart .latest-english li #content span{
-	width: 50%;
-	text-align: right;
 	font-size: 0.7rem;
+	color: rgba(197, 193, 205, 1);
 }
 
 main article .song-chart .latest-english li #image:hover{
 	box-shadow: 0px 0px 20px black;
+	transform: scale(1.2);
 }
 
+/* adding margin to the last section */
+#last-section{
+	margin-bottom: 18vh;
+}
+										/* aside section */
 /*
 	Styling Aside Section of main*/
 /*styling queue header*/
+#song-queue{
+	overflow-y: scroll;
+	max-height: 80vh;
+}
+
+#song-queue::-webkit-scrollbar{
+	display: none;
+}
+
 main aside #aside-header{
 	width: 100%;
 	display: inline-grid;
@@ -926,10 +859,10 @@ main aside #aside-header{
 }
 
 main aside #aside-header h1{
-	color: rgba(83, 51, 148, 1);
+	color: rgba(168, 225, 195, 0.96);
 	font-style: italic;
 	font-size: 2rem;
-	text-shadow: 2px 2px 4px rgba(83, 51, 148, 1);
+	text-shadow: 0px 0px 2px rgba(168, 225, 195, 0.96);
 }
 /*
 @media screen and (max-width:600px){
@@ -946,12 +879,12 @@ main aside #aside-header #more{
 */
 main aside #aside-header #more button{
 	background-color: transparent;
-	color: rgba(83, 51, 148, 1);
+	color: rgba(168, 225, 195, 0.96);
 	border-radius: 10%;
-	border: 2px rgba(83, 51, 148, 1) solid;
+	border: 2px rgba(168, 225, 195, 0.96) solid;
 	font-weight: 900;
 	/*text-shadow: 2px 2px 4px rgba(83, 51, 148, 1);*/
-	box-shadow: 2px 2px 4px rgba(83, 51, 148, 1);
+	box-shadow: 0px 0px 2px rgba(168, 225, 195, 0.96);
 }
 
 main aside #aside-header #more #more-menu {
@@ -988,7 +921,7 @@ main aside #aside-header #more #more-menu ul li a{
 }	
 
 main aside #aside-header #more #more-menu ul li a:hover{
-	color: rgba(83, 51, 148, 1);
+	color: silver;
 	transition: all 1s ease-in-out;
 }
 
@@ -1004,7 +937,7 @@ main aside #list li{
 	margin: 1rem;
 	list-style-type: decimal-leading-zero;
 	list-style-position: inside;
-	color: rgba(83, 51, 148, 1);
+	color: rgba(174, 203, 203, 1);
 }
 
 main aside #list li #item{
@@ -1033,7 +966,7 @@ main aside #list li #song-info{
 
 main aside #list li #song-info #song{
 	font-weight: bold;
-	color: black;
+	color: rgba(197, 193, 205, 1);
 }
 
 main aside #list li #song-info #album{
@@ -1071,6 +1004,16 @@ summary {
 		height: 20vh;
 		grid-template-rows: 10vh 10vh;
     	grid-template-columns: 50% 50%;
+	}
+
+	/* removing bottom-margin from last section */
+	#last-section{
+		margin-bottom: auto;
+	}
+
+	/* adding bottom margin to the queue */
+	#song-queue{
+		margin-bottom: 25vh;
 	}
 }
 
@@ -1177,7 +1120,7 @@ summary #controller #push #play:target #pause{
 
 summary #slider .slide1{
   -webkit-appearance: none;
-  width: 15rem;
+  width: 12rem;
   height: 5px;
   border-radius: 5px;  
   background: #d3d3d3;
@@ -1205,12 +1148,6 @@ summary #volume{
 	align-items: center;
 }
 
-@media screen and (max-width: 650px){
-	summary #volume{
-		grid-row-start: 2;
-		grid-row-end: 3;
-	}
-}
 
 summary #volume i{
 	color: rgba(13, 114, 111, 1);
@@ -1225,7 +1162,7 @@ summary #volume i:hover{
 /*styling sliding button of volume controller*/
 summary #volume #slider .slide2{
   -webkit-appearance: none;
-  width: 7rem;
+  /* width: 7rem; */
   height: 5px;
   border-radius: 5px;  
   background: #d3d3d3;
@@ -1235,11 +1172,37 @@ summary #volume #slider .slide2{
   transition: opacity .2s;
 }
 
+/* queue button not visible for large screen */
+summary #queue-btn{
+	display: none;
+	text-decoration: none;
+}
+
+/* styling queue button */
+summary #queue-btn button{
+	border-radius: 20px;
+	background-color: transparent;
+	border: 0;
+	border: 2px lightgreen solid;
+	color: lightgreen;
+}
+summary #queue-btn button:hover{
+	background-color: darkgreen;
+}
+
 /*for small screen*/
 @media screen and (max-width: 650px){
-	summary #volume #slider .slide2{
-	  width: 5rem;
+
+	summary #volume{
+		display: none;
 	}
+
+	summary #queue-btn{
+		display: flex;
+		align-self: center;
+		justify-self: center;
+	}
+
 }
 
 summary #volume #slider .slide2::-webkit-slider-thumb {

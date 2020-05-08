@@ -1,5 +1,5 @@
 body {
-    background-image: repeating-linear-gradient(90deg, purple, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), rgba(109, 192, 109, 1));
+    background-image: repeating-linear-gradient(90deg, black, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), black);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
