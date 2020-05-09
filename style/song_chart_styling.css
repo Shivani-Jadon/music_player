@@ -56,11 +56,6 @@ nav{
 		margin: 2%;
 	}
 
-	#small-nav .back #home{
-		width: 3rem;
-		height: 3rem;
-	}
-
 	#small-nav .back #home i{
 		/*width: 20%;
 		height: 100%;*/
@@ -121,17 +116,19 @@ nav{
 	#small-nav #nav-menu {
 	    display: none;
 	    background-color: rgba(0, 0, 0, 0.62);
-	    width: 100px;
-	    position: absolute;
-	    top: 4rem;
-	    left: 75%;
-	    text-align: left;
+	  	position: absolute;
+		text-align: left;	
 	    margin: 0px;
 	    padding-left: 0px;
 	    border-radius: 10%;
 	    box-shadow: 0rem 0rem 1rem silver;
 	}
 
+	@media screen and (max-width: 524px){
+		#small-nav #nav-menu {
+			left: 70%;
+		}
+	}
 
 	/*making menu appear over hovering*/
 	#small-nav .bar #bar-icon:hover #nav-menu{
@@ -327,6 +324,7 @@ main article .channel-playlist #heading h1{
 main article .channel-playlist #latest-release{
 	list-style: none;
 	padding: 0px;
+	margin-bottom: 20vh;
 }
 
 main article .channel-playlist #latest-release li {
@@ -411,7 +409,7 @@ main aside #list li{
 	margin: 1rem;
 	list-style-type: decimal-leading-zero;
 	list-style-position: inside;
-	color: rgba(176, 64, 116, 1);
+	color: #9E9E9E;
 }
 
 main aside #list li #item{
@@ -491,7 +489,7 @@ main aside #channels li {
 		overflow-x: scroll;
 		padding: 0px;
 		margin: 0px;
-		margin-bottom: 20vh;
+		margin-bottom: 25vh;
 	}	
 
 	main aside #channels li {

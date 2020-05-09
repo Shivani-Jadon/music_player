@@ -1,12 +1,11 @@
 body {
-    background-image: repeating-linear-gradient(90deg, purple, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), rgba(109, 192, 109, 1));
+    background-image: repeating-linear-gradient(90deg, black, rgba(92, 147, 124, 1), rgba(73, 109, 141, 1), black);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin: 0px;
     font-family: sans-serif;
 }
-
 
 nav{
 	box-shadow: 0px 0px 1rem black;
@@ -56,10 +55,6 @@ nav{
 	margin: 2%;
 }
 
-#small-nav .back #home{
-	width: 3rem;
-	height: 3rem;
-}
 
 #small-nav .back #home i{
 	/*width: 20%;
@@ -103,14 +98,7 @@ nav{
 	margin: 2%;
 }
 
-/* #small-nav .bar #bar-icon{
-	width: 3rem;
-	height: 3rem;
-} */
-
 #small-nav .bar i{
-	/*width: 20%;
-	height: 100%;*/
 	color: rgba(168, 225, 195, 0.96);
 	text-align: center;
 	font-size: 1.5rem;
@@ -121,10 +109,7 @@ nav{
 #small-nav #nav-menu {
 	display: none;
 	background-color: rgba(0, 0, 0, 0.62);
-	width: 100px;
 	position: absolute;
-	top: 4rem;
-	left: 75%;
 	text-align: left;
 	margin: 0px;
 	padding-left: 0px;
@@ -132,6 +117,11 @@ nav{
 	box-shadow: 0rem 0rem 1rem silver;
 }
 
+@media screen and (max-width: 524px){
+	#small-nav #nav-menu {
+		left: 70%;
+	}
+}
 
 /*making menu appear over hovering*/
 #small-nav .bar #bar-icon:hover #nav-menu{
@@ -205,24 +195,22 @@ main{
 
 main article{
 	width: 70vw;
-	margin: 20px 40px;
+	margin: 5vh auto;
 }
 
 main aside{
 	width: 30vw;
-	margin: 1rem;
+	margin: 5vh auto;
 	
 }
 
 @media screen and (max-width: 700px){
 	main article{
 		width: 60vw;
-		margin: 20px 10px;
 	}
 
 	main aside{
 		width: 40vw;
-		margin: 1rem;	
 	}
 	
 }
@@ -233,15 +221,20 @@ main aside{
 		display: block;
 	}
 
+	main article{
+		width: 100%;
+		margin: 5vh auto;
+	}
+
 	main aside{
-		margin-left: 15vw;
-		margin-top: 1rem;
+		width: 100%;
 	}
 }
 
+
 /*styling card section*/
 main article .card {
-    width: 100%;
+	margin: 20px;
     display: inline-grid;
     grid-template-columns: 40% 60%;
     background: rgba(0, 6, 26, 0.68);
@@ -250,20 +243,15 @@ main article .card {
 
 main article .card #image{
 	width: 100%;
-	height: 300px;
+	max-height: 300px;
 }
 
 @media screen and (max-width: 700px)
 {
 	main article .card {
-	    width: 100%;
 	    display: block;
 	}
 
-	main article .card #image{
-		width: 100%;
-		height: 200px;
-	}
 }
 
 main article .card #image img{
@@ -276,6 +264,7 @@ main article .card #content{
 	text-align: justify;
 	padding: 10px;
 }
+
 
 main article .card #content h1{
 	color: rgba(242, 216, 146, 1);
@@ -314,7 +303,6 @@ main article .channel-playlist #heading {
     color: rgba(23, 66, 115, 1);
     text-align: center;
     font-size: 20px;
-    border: ;
     text-shadow: 2px 2px 5px rgba(23,66,115,1);
 }
 
@@ -327,54 +315,39 @@ main article .channel-playlist #heading h1{
 
 /*styling recommended list*/
 main article .channel-playlist #latest-release{
-	width: 100%;
 	list-style: none;
-	display: flex;
-	margin: 1rem;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	padding: 0px;
+	margin-bottom: 20vh;
 }
 
 main article .channel-playlist #latest-release li {
-    width: 100%;
-    display: flex;
+	display: flex;
+	padding: 2% 3%;
+	justify-content: center;
+	align-items: center;
     margin: 10px;
-    background: rgba(166, 170, 181, 0.4);
+    background: rgba(235, 208, 230, 0.4);
 }
 
 /*styling image div*/
 
 main article .channel-playlist #latest-release .latest-image {
-    width: 30%;
-    height: 4rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    max-width: 150px;
+    max-height: 100px;
 }
 
 main article .channel-playlist #latest-release .latest-image img {
-    height: 80%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
 }
 
 main article .channel-playlist #latest-release #content {
-    height: 50%;
-    width: 60%;
-    display: flex;
+	display: flex;
+	margin-left: 10%;
 }
 
-main article .channel-playlist #latest-release #content div {
-    width: 40%;
-    height: 100%;
-    margin: 0.5rem;
-    position: relative;
-    top: 25%;
-}
 
 main article .channel-playlist #latest-release #content div h4{
-	width: 90%;
-	height: 50%;
 	margin: 0px;
 	color: rgba(23, 66, 115, 1);
 }
@@ -383,19 +356,20 @@ main article .channel-playlist #latest-release #content div span{
 	width: 90%;
 	height: 50%;
 	color: black;
+	font-size: 12px;
 }
 
 main article .channel-playlist #latest-release #content #date {
-    font-size: 12px;
+	font-size: 12px;
+	width: 4rem;
     color: rgba(187, 211, 211, 1);
     text-align: right;
-    margin-top: 1rem;
 }
 
 main article .channel-playlist #latest-release #content #icon{
-    text-align: right;
-    margin: 10px;
-    font-size: 20px;
+    color: #86d0dc;
+	font-size: 20px;
+	margin-left: 20px;
 }
 
 main article .channel-playlist #latest-release #content #icon i{
@@ -423,15 +397,14 @@ main aside #list{
 }
 
 main aside #list li{
-	width: 90%;
-	height: 20%;
 	margin: 1rem;
 	list-style-type: decimal-leading-zero;
 	list-style-position: inside;
-	color: rgba(176, 64, 116, 1);
+	color: #9E9E9E;
 }
 
 main aside #list li #item{
+	box-shadow: 0px 0px 10px black;
 	display: flex;
 	margin-left: 1.5rem;
 	margin-top: -2rem;
@@ -495,6 +468,25 @@ main aside .side-section2 #artists li {
     left: 25%;
 }
 
+@media screen and (max-width: 524px){
+
+	main aside .side-section2 #artists{
+		list-style: none;
+		display: flex;
+		overflow-x: scroll;
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 25vh;
+	}	
+
+	main aside .side-section2 #artists li {
+		margin: 10px;
+		position: relative;
+		left: 0;
+	}
+	
+}
+
 main aside .side-section2 #artists li #artist-box{
 	height: 8rem;
 	width: 8rem;
@@ -514,7 +506,7 @@ main aside .side-section2 #artists li #artist-box a:hover{
 /*styling names*/
 main aside .side-section2 #artists li #name{
 	text-align: center;
-	color: black;
+	color: darkgrey;
 	font-size: 1rem;
 	font-family: sans-serif;
 	font-style: italic;
@@ -527,10 +519,10 @@ main aside .side-section2 #artists li #name{
 Styling summary section 
 Summary section is fixed wrt to the page*/
 summary {
-    width: 100%;
-    height: 15vh;
-    display: inline-grid;
-    grid-template-columns: 20% 50% 25%;
+	width: 100%;
+	padding: 10px;
+	display: inline-grid;
+	grid-template-columns: 20% 50% 25%;
     position: fixed;
     bottom: 0px;
     background: black;
@@ -540,9 +532,6 @@ summary {
 @media screen and (max-width: 650px){
 	summary{
 		display: inline-grid;
-		height: 20vh;
-		grid-template-rows: 10vh 10vh;
-    	grid-template-columns: 50% 50%;
 	}
 }
 
@@ -558,7 +547,17 @@ summary #song-desc{
 		grid-row-start: 2;
 		grid-row-end: 3;
 	}
+
+	summary{
+		display: inline-grid;
+    	grid-template-columns: 100%;
+	}
 }
+
+/* summary #song-desc{
+	grid-row-start: 2;
+	grid-row-end: 3;
+}  */
 
 summary #song-desc #image{
 	width: 5rem;
@@ -617,6 +616,10 @@ summary #controller{
 	}
 }
 
+summary #controller #push{
+	display: flex;
+}
+
 summary #controller #push span{
 	width: 2rem;
 	height: 2rem;
@@ -633,23 +636,41 @@ summary #controller #push span i:hover{
 	color: gray;
 }
 
-/*adding play pause effect*/
-summary #controller #push #pause{
-	display: none;
-	width: 0px;
-	height: 0px;
-	overflow: hidden;
+summary #controller #push a{
+	text-decoration: none;
 }
 
-summary #controller #push #play:target #pause{
-	display: block;
+/*adding play pause effect*/
+/* making checkbox invisible and over the play-pause button */
+#pp input[type="checkbox"] {
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	opacity: 0;
+  } 
+
+input[type="checkbox"] ~ #play-pause #pause{
+	display: flex;
 }
+
+input[type="checkbox"] ~ #play-pause #play{
+	display: none;
+}
+
+input[type="checkbox"]:checked ~ #play-pause #play{
+	display: flex;
+}
+
+input[type="checkbox"]:checked ~ #play-pause #pause{
+	display: none;
+}
+
 
 /*sliding sliding button of the controller*/
 
 summary #slider .slide1{
   -webkit-appearance: none;
-  width: 15rem;
+  width: 12rem;
   height: 5px;
   border-radius: 5px;  
   background: #d3d3d3;
@@ -679,8 +700,7 @@ summary #volume{
 
 @media screen and (max-width: 650px){
 	summary #volume{
-		grid-row-start: 2;
-		grid-row-end: 3;
+		display: none;
 	}
 }
 
@@ -697,7 +717,6 @@ summary #volume i:hover{
 /*styling sliding button of volume controller*/
 summary #volume #slider .slide2{
   -webkit-appearance: none;
-  width: 7rem;
   height: 5px;
   border-radius: 5px;  
   background: #d3d3d3;
