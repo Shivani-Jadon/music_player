@@ -14,13 +14,14 @@ nav{
 
 #small-nav{
 		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 
 	/*music player logo*/
 	#small-nav .logo{
 		display: flex;
-		margin: 1rem;
-		width: 30%;
+		margin: 2%;
 	}
 
 	#small-nav .logo-pic{
@@ -37,26 +38,22 @@ nav{
 		width: 100%;
 		height: 100%;
 		border-radius: 50%;
+		box-shadow: 0px 0px 4px black;
 	}
 
 	#small-nav .logo span {
-	    text-align: center;
-	    color: white;
-	    font-size: 100%;
-	    font-style: '';
-	    font-weight: bold;
-	    align-items: center;
-	    position: relative;
-	    top: 25%;
-	    left: -7%;
-	    text-shadow: 4px 4px 5px black;
+		color: white;
+		position: relative;
+		left: -7%;
+		margin-top: 10px;
+		text-shadow: 0px 0px 4px black;
+		font-family: cursive;
 	}
 
 	/*styling home*/
 	#small-nav .back{
 		display: flex;
-		margin: 2rem 1rem 0rem 1rem;
-		width: 20%;
+		margin: 2%;
 	}
 
 	#small-nav .back #home{
@@ -79,8 +76,7 @@ nav{
 
 	/*styling user*/
 	#small-nav .id{
-		margin: 1rem;
-		width: 20%;
+		margin: 2%;
 	}
 
 	#small-nav .id .user{
@@ -94,7 +90,7 @@ nav{
 		height: 3rem;
 		border-radius: 50%;
 		box-shadow: 0px 0px 5px gray;
-		margin: 0.5rem;
+		margin: 1%;
 		text-align: center;
 		font-weight: bold;
 		color: rgba(247, 208, 130, 1);
@@ -104,15 +100,13 @@ nav{
 	/*styling bar menu :- notification, favorites and search*/
 	#small-nav .bar{
 		display: flex;
-		margin: 2rem 1rem 0rem 1rem;
-		width: 20%;
-		text-align: right;
+		margin: 2%;
 	}
 
-	#small-nav .bar #bar-icon{
+	/* #small-nav .bar #bar-icon{
 		width: 3rem;
 		height: 3rem;
-	}
+	} */
 
 	#small-nav .bar i{
 		/*width: 20%;
@@ -179,6 +173,8 @@ nav{
 		text-align: center;
 		font-size: 0.8rem;
 		margin-left: 5px;
+		border: 0;
+		border-radius: 10px;
 	}
 
 	#small-nav #nav-menu li a{
@@ -201,13 +197,6 @@ nav{
 		transition: 1s;
 	}
 
-@media screen and (min-width: 900px){
-	#small-nav{
-		margin-left: 15%;
-		margin-right: 15%;
-	}
-}
-
 
 /*styling main section*/
 main{
@@ -216,24 +205,23 @@ main{
 
 main article{
 	width: 70vw;
-	margin: 20px 40px;
+	margin: 5vh auto;
 }
 
 main aside{
 	width: 30vw;
-	margin: 1rem;
+	margin: 5vh auto;
 	
 }
 
 @media screen and (max-width: 700px){
 	main article{
 		width: 60vw;
-		margin: 20px 10px;
+		/* margin: 20px 10px; */
 	}
 
 	main aside{
 		width: 40vw;
-		margin: 1rem;	
 	}
 	
 }
@@ -244,15 +232,20 @@ main aside{
 		display: block;
 	}
 
+	main article{
+		width: 100%;
+		margin: 5vh auto;
+	}
+
 	main aside{
-		margin-left: 15vw;
-		margin-top: 1rem;
+		width: 100%;
 	}
 }
 
+
 /*styling card section*/
 main article .card {
-    width: 100%;
+	margin: 20px;
     display: inline-grid;
     grid-template-columns: 40% 60%;
     background: rgba(165, 49, 67, 1);
@@ -261,20 +254,15 @@ main article .card {
 
 main article .card #image{
 	width: 100%;
-	height: 300px;
+	max-height: 300px;
 }
 
 @media screen and (max-width: 700px)
 {
 	main article .card {
-	    width: 100%;
 	    display: block;
 	}
 
-	main article .card #image{
-		width: 100%;
-		height: 200px;
-	}
 }
 
 main article .card #image img{
@@ -337,53 +325,37 @@ main article .channel-playlist #heading h1{
 
 /*styling recommended list*/
 main article .channel-playlist #latest-release{
-	width: 100%;
 	list-style: none;
-	display: flex;
-	margin: 1rem;
-	flex-wrap: wrap;
-	justify-content: space-around;
 	padding: 0px;
 }
 
 main article .channel-playlist #latest-release li {
-    width: 100%;
-    display: flex;
+	display: flex;
+	padding: 2% 3%;
+	justify-content: center;
+	align-items: center;
     margin: 10px;
     background: rgba(235, 208, 230, 0.4);
 }
 
 /*styling image div*/
 main article .channel-playlist #latest-release .latest-image {
-    width: 30%;
-    height: 4rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    max-width: 150px;
+    max-height: 100px;
 }
 
 main article .channel-playlist #latest-release .latest-image img {
-    height: 80%;
-    width: 60%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 main article .channel-playlist #latest-release #content {
-    height: 50%;
-    width: 60%;
-    display: flex;
+	display: flex;
+	margin-left: 10%;
 }
 
-main article .channel-playlist #latest-release #content div {
-    width: 40%;
-    height: 100%;
-    margin: 0.5rem;
-    position: relative;
-    top: 25%;
-}
 
 main article .channel-playlist #latest-release #content div h4{
-	width: 90%;
-	height: 50%;
 	margin: 0px;
 	color: rgba(23, 66, 115, 1);
 }
@@ -392,20 +364,20 @@ main article .channel-playlist #latest-release #content div span{
 	width: 90%;
 	height: 50%;
 	color: black;
+	font-size: 12px;
 }
 
 main article .channel-playlist #latest-release #content #date {
-    font-size: 12px;
+	font-size: 12px;
+	width: 4rem;
     color: rgba(187, 211, 211, 1);
     text-align: right;
-    margin-top: 1rem;
 }
 
 main article .channel-playlist #latest-release #content #icon{
     color: #86d0dc;
-    text-align: right;
-    margin: 10px;
-    font-size: 20px;
+	font-size: 20px;
+	margin-left: 20px;
 }
 
 main article .channel-playlist #latest-release #content #icon i{
@@ -431,11 +403,11 @@ main aside .side-section1 .aside-heading h2 {
 main aside #list{
 	display: block;
 	padding: 0px;
+	max-height: 70vh;
+	overflow-y: scroll;
 }
 
 main aside #list li{
-	width: 90%;
-	height: 20%;
 	margin: 1rem;
 	list-style-type: decimal-leading-zero;
 	list-style-position: inside;
@@ -443,6 +415,7 @@ main aside #list li{
 }
 
 main aside #list li #item{
+	box-shadow: 0px 0px 10px black;
 	display: flex;
 	margin-left: 1.5rem;
 	margin-top: -2rem;
@@ -496,22 +469,34 @@ main aside #channels{
 	list-style: none;
 	display: block;
 	padding: 0px;
-	width: 90%;
-	height: 30%;
 	margin:0px;
 } 
 
 main aside #channels li {
-    width: 10rem;
+    width: 90%;
     height: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 1rem 0rem;
-    position: relative;
-    left: 25%;
+    margin: 10px;
+}
+
+@media screen and (max-width: 524px){
+
+	main aside #channels {
+		list-style: none;
+		display: flex;
+		overflow-x: scroll;
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 20vh;
+	}	
+
+	main aside #channels li {
+		width: 9rem;
+	}	
 }
 
 main aside #channels li a{
@@ -546,10 +531,10 @@ main aside #channels li a:hover{
 Styling summary section 
 Summary section is fixed wrt to the page*/
 summary {
-    width: 100%;
-    height: 15vh;
-    display: inline-grid;
-    grid-template-columns: 20% 50% 25%;
+	width: 100%;
+	padding: 10px;
+	display: inline-grid;
+	grid-template-columns: 20% 50% 25%;
     position: fixed;
     bottom: 0px;
     background: black;
@@ -559,9 +544,6 @@ summary {
 @media screen and (max-width: 650px){
 	summary{
 		display: inline-grid;
-		height: 20vh;
-		grid-template-rows: 10vh 10vh;
-    	grid-template-columns: 50% 50%;
 	}
 }
 
@@ -577,7 +559,17 @@ summary #song-desc{
 		grid-row-start: 2;
 		grid-row-end: 3;
 	}
+
+	summary{
+		display: inline-grid;
+    	grid-template-columns: 100%;
+	}
 }
+
+/* summary #song-desc{
+	grid-row-start: 2;
+	grid-row-end: 3;
+}  */
 
 summary #song-desc #image{
 	width: 5rem;
@@ -636,6 +628,10 @@ summary #controller{
 	}
 }
 
+summary #controller #push{
+	display: flex;
+}
+
 summary #controller #push span{
 	width: 2rem;
 	height: 2rem;
@@ -652,23 +648,41 @@ summary #controller #push span i:hover{
 	color: gray;
 }
 
-/*adding play pause effect*/
-summary #controller #push #pause{
-	display: none;
-	width: 0px;
-	height: 0px;
-	overflow: hidden;
+summary #controller #push a{
+	text-decoration: none;
 }
 
-summary #controller #push #play:target #pause{
-	display: block;
+/*adding play pause effect*/
+/* making checkbox invisible and over the play-pause button */
+#pp input[type="checkbox"] {
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	opacity: 0;
+  } 
+
+input[type="checkbox"] ~ #play-pause #pause{
+	display: flex;
 }
+
+input[type="checkbox"] ~ #play-pause #play{
+	display: none;
+}
+
+input[type="checkbox"]:checked ~ #play-pause #play{
+	display: flex;
+}
+
+input[type="checkbox"]:checked ~ #play-pause #pause{
+	display: none;
+}
+
 
 /*sliding sliding button of the controller*/
 
 summary #slider .slide1{
   -webkit-appearance: none;
-  width: 15rem;
+  width: 12rem;
   height: 5px;
   border-radius: 5px;  
   background: #d3d3d3;
@@ -698,8 +712,7 @@ summary #volume{
 
 @media screen and (max-width: 650px){
 	summary #volume{
-		grid-row-start: 2;
-		grid-row-end: 3;
+		display: none;
 	}
 }
 
@@ -716,7 +729,6 @@ summary #volume i:hover{
 /*styling sliding button of volume controller*/
 summary #volume #slider .slide2{
   -webkit-appearance: none;
-  width: 7rem;
   height: 5px;
   border-radius: 5px;  
   background: #d3d3d3;

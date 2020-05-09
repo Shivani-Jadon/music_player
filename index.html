@@ -840,10 +840,15 @@
 				<span><a href="#"><i class="fas fa-random"></i></a></span>
 				<!--for backward-->
 				<span><a href="#"><i class="fas fa-step-backward"></i></a></span>
-				<!--anchor tag song paused-->
-				<span><a href="#play" id="pause"><i class="far fa-pause-circle"></i></a></span>
-				<!--playing the song after targetting from pause-->
-				<span><a href="#pause" id="play"><i class="fas fa-play"></i></a></span>
+				<!--playing and pausing the song-->
+				<div id="pp">
+					<input type="checkbox" id="check-btn">
+					<span id="play-pause">
+						<a href="#" for="check-btn"><i id="pause" class="far fa-pause-circle"></i></a>
+						<a href="#" for="check-btn"><i id="play" class="fas fa-play"></i></a>
+					</span>
+				</div>
+				
 				<!--for fast forwarding-->
 				<span><a href="#"><i class="fas fa-step-forward"></i></a></span>
 				<!--for repeating song-->
